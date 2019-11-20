@@ -4,9 +4,6 @@
   "scripts": {
     "start": "meteor run",
     "start-e2e": "meteor test --full-app --port 3000 --driver-package tmeasday:acceptance-test-driver",
-    "test": "meteor test --once --driver-package meteortesting:mocha",
-    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
-    "visualize": "meteor --production --extra-packages bundle-visualizer",
     "cypress": "start-server-and-test start-e2e http://localhost:3000 cypress-open",
     "cypress-open": "./node_modules/cypress/bin/cypress open"
   },
