@@ -4,7 +4,9 @@ describe('test suite name', () => {
   });
 
   it('clicks', () => {
-    cy.contains('Click me').click()
-    cy.contains('Click me').click()
+    cy.contains('Click Me').click()
+    cy.contains('Click Me').click()
+
+    cy.contains('2 times').should('exist')
   });
 });
